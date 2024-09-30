@@ -8,7 +8,6 @@ const App = () => {
     fetch("/movieListData.json")
       .then((response) => response.json())
       .then((data) => {
-        // 데이터를 콘솔에 출력합니다.
         console.log("Fetched data:", data);
         if (data && Array.isArray(data.results)) {
           setMovies(data.results);
