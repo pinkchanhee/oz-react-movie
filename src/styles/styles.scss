@@ -1,0 +1,77 @@
+$app-bg-color: #ffe4e1;
+$card-bg-color: #ffc0cb;
+$text-color: #ff69b4;
+$movie-title-color: #d147a3;
+$movie-rating-color: #b03060;
+
+body {
+    background-color: $app-bg-color; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    padding: 20px;
+    color: $text-color;
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie-card {
+    border: 2px solid $text-color;
+    padding: 10px;
+    width: 150px;
+    background-color: $card-bg-color;
+    border-radius: 8px;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        color: $movie-title-color;
+    }
+
+    .rating {
+        color: $movie-rating-color;
+    }
+}
+
+.movie-detail {
+    margin-top: 20px;
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
